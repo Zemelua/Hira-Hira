@@ -1,0 +1,25 @@
+{
+	"schemaVersion": 1,
+	"id": "hira_hira",
+	"version": "${version}",
+	"name": "Hira-Hira",
+	"description": "",
+	"authors": [ ],
+	"contact": { "repo": "https://github.com/zemel/Hira-Hira" },
+	"license": "MIT",
+	"icon": "assets/hira_hira/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [ "io.github.zemelua.hira_hira.client.HiraHiraClient" ], "main": [
+			"io.github.zemelua.hira_hira.HiraHira"
+		]
+	},
+	"mixins": [
+		"hira_hira.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=${loader_version}",
+		"fabric": "*",
+		"minecraft": "${minecraft_version}"
+	}
+}
